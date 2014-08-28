@@ -3,7 +3,7 @@ Simple Todo App
 
 This is an Android demo application for creating, editing and saving a simple ToDo list.
 
-**_Time spent:_** A couple of hours here and there due to busy work schedule, 1 day (~ 8 hours) spent in total.
+**_Time spent:_** A couple of hours here and there due to busy work schedule, 1 day (~ 12 hours) spent in total.
 
 **_Completed user stories:_**
 
