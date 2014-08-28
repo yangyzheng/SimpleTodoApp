@@ -20,7 +20,7 @@ This is an Android demo application for creating, editing and saving a simple To
  
 **_Notes:_**
 
-Spent some time set up the enviroment and went through all the slides, demo videos and tips, they were very helpful. Played around a bit with different layout, found that it's more convenient to edit those layout xml directly.
+Spent some time setting up the enviroment and went through all the slides, demo videos and tips, they were very helpful. Played around a bit with different layouts, found that it's more convenient to edit those layout xml directly.
 Wish I had more time to work on this :cry: because learning Android application development is really fun :smiley:
 
 Walkthrough of all user stories:
