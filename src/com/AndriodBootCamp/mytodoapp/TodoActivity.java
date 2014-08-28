@@ -3,6 +3,7 @@ package com.AndriodBootCamp.mytodoapp;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
@@ -18,6 +19,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class TodoActivity extends ActionBarActivity {
 	private ArrayList<String> todoItems;
@@ -25,13 +27,20 @@ public class TodoActivity extends ActionBarActivity {
 	private ListView lvItems;
 	private EditText etNewItem;
 	private final int EDIT_REQUEST = 100;
+	private View viewContainer;
+	private String lastDeletedItem;
+	private int lastDeletedPos;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_todo);
+		/*ArrayAdapter<Model> adapter = new InteractiveArrayAdapter(this,
+	            getModel());
+	    l.setAdapter(adapter);*/
 		lvItems = (ListView)findViewById(R.id.lvItems);
 		etNewItem = (EditText)findViewById(R.id.etNewItem);
+		viewContainer = findViewById(R.id.undobar);
 		readItems();
 		//populateArrayItems();	//in-memory ToDo list	  
 		//Note: "this" refers to the current context/activity, which can also be obtained
@@ -49,8 +58,11 @@ public class TodoActivity extends ActionBarActivity {
 			@Override
 			public boolean onItemLongClick(AdapterView<?> adapter, View item,
 					int pos, long id) {
+				lastDeletedItem = todoItems.get(pos);
+				lastDeletedPos = pos;
 				todoItems.remove(pos);
 				todoAdapter.notifyDataSetChanged();
+				showUndo(viewContainer);
 				saveItems(); //save changes to file when the item is deleted
 				return true;
 			}		
@@ -65,6 +77,26 @@ public class TodoActivity extends ActionBarActivity {
 				launchEditView(todoItems.get(pos), pos);				
 			}     
 		});
+	}
+	
+	public void onClickUndo(View view) {
+			todoItems.add(lastDeletedPos, lastDeletedItem);
+			todoAdapter.notifyDataSetChanged();
+		    Toast.makeText(this, "Deletion undone", Toast.LENGTH_LONG).show();
+		    viewContainer.setVisibility(View.GONE);
+		  }
+
+		  public static void showUndo(final View viewContainer) {
+		    viewContainer.setVisibility(View.VISIBLE);
+		    viewContainer.setAlpha(1);
+		    viewContainer.animate().alpha(0.4f).setDuration(5000).withEndAction(new Runnable() {
+
+		          @Override
+		          public void run() {
+		            viewContainer.setVisibility(View.GONE);
+		          }
+		        });
+
 	}
 	
 	//uses intent to launch edit activity within the same application
@@ -130,6 +162,25 @@ public class TodoActivity extends ActionBarActivity {
 		saveItems(); //write to file when new item is added
 	}
 	
+	
+	 private List<Model> getModel() {
+		    List<Model> list = new ArrayList<Model>();
+		    list.add(get("T-con @10:20 am"));
+		    list.add(get("Pick up dry clean"));
+		    list.add(get("Percussion class"));
+		    list.add(get("Get groceries"));
+		    list.add(get("Submit todo app"));
+		    list.add(get("Get a hair cut"));
+		    // Initially select one of the items
+		    list.get(1).setSelected(true);
+		    return list;
+		  }
+
+	  private Model get(String s) {
+	    return new Model(s);
+	  }
+		  
+		  
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

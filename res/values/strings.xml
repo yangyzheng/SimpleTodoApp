@@ -10,6 +10,8 @@
     <string name="tv_editItem_label">Edit Item Below:</string>
     <string name="title_todo_activity">Simple Todo</string>
     <string name="title_editItem_activity">Edit Item</string>
+    <string name="abar_deleted">1 Deleted</string>
+    <string name="abar_undo">Undo</string>
     <color name="notebookColor">#FFFF99</color>
 
 </resources>
