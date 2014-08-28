@@ -3,7 +3,7 @@ Simple Todo App
 
 This is an Android demo application for creating, editing and saving a simple ToDo list.
 
-Time spent: a couple of hours here and there due to busy work schedule, 1 day spent in total
+Time spent: a couple of hours here and there due to busy work schedule, 1 day (~ 8 hours) spent in total.
 
 Completed user stories:
 
@@ -16,6 +16,7 @@ Completed user stories:
 Notes:
 
 Spent some time set up the enviroment and went through all the slides, demo videos and tips, they were very helpful. Played around a bit with different layout, found that it's more convenient to edit those layout xml directly.
+Wish I had more time to work on this because learning Android application development is really fun!
 
 Walkthrough of all user stories:
 
