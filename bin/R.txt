@@ -337,7 +337,8 @@ int layout abc_simple_decor 0x7f030017
 int layout activity_edit_item 0x7f030018
 int layout activity_todo 0x7f030019
 int layout checkbox_row 0x7f03001a
-int layout support_simple_spinner_dropdown_item 0x7f03001b
+int layout image_row 0x7f03001b
+int layout support_simple_spinner_dropdown_item 0x7f03001c
 int menu edit_item 0x7f0c0000
 int menu todo 0x7f0c0001
 int string abar_deleted 0x7f0a0016

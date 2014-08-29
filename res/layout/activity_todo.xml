@@ -50,7 +50,7 @@
         android:layout_gravity="bottom|center_horizontal"
         android:layout_margin="15dp"
         android:alpha="100"
-        android:background="#A3A3A3"
+        android:background="#585858"
         android:dividerPadding="11dp"
         android:padding="4dp" >
 
@@ -68,8 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:onClick="onClickUndo"
-            android:background="#A3A3A3"
+            android:background="#585858"
             android:drawableLeft="@drawable/undo"
+            android:drawablePadding="8dp"
             android:text="@string/abar_undo"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#fff" />
