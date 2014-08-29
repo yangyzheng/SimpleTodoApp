@@ -30,7 +30,7 @@ Wish I had more time to work on this :cry: because learning Android application 
 
 **_Walkthrough of all user stories:_**
 
-![screenshot](https://raw.githubusercontent.com/yangyzheng/SimpleTodoApp/master/readme/SimpleTodo10.gif)
+![screenshot](https://raw.githubusercontent.com/yangyzheng/SimpleTodoApp/master/readme/SimpleTodo11.gif)
 
 **_Things still working on:_**
 
