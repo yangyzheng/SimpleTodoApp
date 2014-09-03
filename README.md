@@ -23,9 +23,9 @@ This is an Android demo application for creating, editing and saving a simple To
 - [ ] bug fixing
  
 **_Additional thoughts:_**
-- [ ] Add tabs: daily, weekly and monthly todo lists
+- [ ] Add tabs: daily, weekly and monthly ToDo lists
 - [ ] Key words based todo list items, e.g. **email**, **phone #**, **URL** - will invoke email composition, phone call etc.
-- [ ] Configuration settings: personalized UI schemes, localization, add Spanish and Chinese first
+- [ ] Configuration settings: personalized UI schemes, reminder, localization, e.g. add Spanish and Chinese first
 
 **_Notes:_**
 
