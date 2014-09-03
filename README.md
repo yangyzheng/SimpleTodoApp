@@ -20,7 +20,7 @@ This is an Android demo application for creating, editing and saving a simple To
 **_Work-in-progress:_**
 - [ ] Optional: Tweak the style of the app and improve the UI
 - [ ] Optional: Use a DialogFragment instead of new Activity to support editing items
-- [ ] bug fixing
+- [ ] Bug fixing: SQLite based datetime queries, time text formatting
  
 **_Additional thoughts:_**
 - [ ] Add tabs: daily, weekly and monthly ToDo lists
