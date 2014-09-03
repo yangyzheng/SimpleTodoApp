@@ -22,6 +22,11 @@ This is an Android demo application for creating, editing and saving a simple To
 - [ ] Optional: Use a DialogFragment instead of new Activity to support editing items
 - [ ] bug fixing
  
+**_Additional thoughts:_**
+- [ ] Add tabs: daily, weekly and monthly todo lists
+- [ ] Key words based todo list items, e.g. **email**, **phone #**, **URL** - will invoke email composition, phone call etc.
+- [ ] Configuration settings: personalized UI schemes, localization, add Spanish and Chinese first
+
 **_Notes:_**
 
 Spent some time setting up the enviroment and went through all the slides, demo videos and tips, they were very helpful. Played around a bit with different layouts, found that it's more convenient to edit those layout xml directly.
