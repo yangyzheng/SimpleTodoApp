@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="priority1">1</integer>
+    <integer name="priority2">2</integer>
+    <integer name="priority3">3</integer>
+    <integer name="priority4">4</integer>
+    <integer name="priority5">5</integer>
+</resources>

@@ -5,12 +5,12 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:layout_marginLeft="4dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/ic_launcher" >
+        android:layout_marginTop="5dp"
+        android:src="@drawable/tp4" >
     </ImageView>
 
     <TextView
@@ -18,7 +18,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/label"
-        android:textSize="20sp" >
+        android:textSize="18sp" >
     </TextView>
-
+    
+    <TextView
+	    android:id="@+id/dueTime"
+	    android:layout_width="80dp"
+	    android:layout_height="25dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginTop="2dp"
+	    android:paddingTop = "3dp"
+	    android:paddingLeft="8dp"
+	    android:onClick="onClickDueTime"
+	    android:clickable="true"
+	    android:text="00:00 AM"
+	    android:textSize="18sp"
+	    android:background="@drawable/clockbkgd">
+    </TextView>
 </LinearLayout> 

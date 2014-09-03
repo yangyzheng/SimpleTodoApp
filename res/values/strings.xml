@@ -13,5 +13,9 @@
     <string name="abar_deleted">1 Deleted</string>
     <string name="abar_undo">Undo</string>
     <color name="notebookColor">#FFFF99</color>
-
+	<color name="red">#B20000</color>
+	<string name="priority_label">Priority:</string>
+	<string name="duetime_label">Due @:</string>
+	<string name="priority_hint">5</string>
+	<string name="etDueTime_hint">9:00 AM</string>
 </resources>

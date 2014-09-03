@@ -28,14 +28,71 @@
         android:ems="10"
         android:inputType="textMultiLine" />
 
-    <Button
-        android:id="@+id/btnSave"
+    <TextView
+        android:id="@+id/tvPriority"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/etEditItem"
         android:layout_below="@+id/etEditItem"
+        android:layout_marginTop="52dp"
+        android:text="@string/priority_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <EditText
+         android:id="@+id/etPriority"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/tvPriority"
+         android:layout_alignBottom="@+id/tvPriority"
+         android:layout_alignLeft="@+id/etDueTime"
+         android:layout_alignRight="@+id/tvEditLabel"
+         android:ems="10"
+         android:hint="@string/priority_hint"
+         android:inputType="number" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPriority"
+        android:layout_alignTop="@+id/tvPriority"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/etPriority"
+        android:contentDescription="@string/priority_label"
+        android:src="@drawable/choices" />
+   
+    <TextView
+        android:id="@+id/tvDueTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvPriority"
+        android:layout_below="@+id/tvPriority"
+        android:layout_marginTop="46dp"
+        android:text="@string/duetime_label" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etDueTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDueTime"
+        android:layout_alignBottom="@+id/tvDueTime"
+        android:layout_alignRight="@+id/etEditItem"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btnSave"
+        android:ems="10"
+        android:hint="@string/etDueTime_hint"
+        android:inputType="time" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPriority"
+        android:layout_below="@+id/tvPriority"
+        android:layout_marginTop="114dp"
         android:onClick="onSaveItem"
-        android:layout_marginTop="34dp"
-        android:text="@string/btn_save_label" />
+        android:background="@drawable/todosave"/>
+    
 
 </RelativeLayout>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
-<RelativeLayout 
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/notebookColor"
@@ -14,10 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnAdd"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
     </ListView>
-    
+
     <EditText
         android:id="@+id/etNewItem"
         android:layout_width="wrap_content"
@@ -25,20 +25,16 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:ems="10"
-        android:hint="@string/add_hint" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="@string/add_hint" />
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onAddItem"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="@string/add_button_label" />
-
+        android:layout_alignParentBottom="true"
+        android:onClick="onAddItem"
+        android:background="@drawable/newtodo"/>
 
 </RelativeLayout>
 
